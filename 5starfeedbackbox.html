@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>5 star rating feedback form</title>
+    <style>
+        .rating-box
+        {
+            gap: 20px;
+            display: flex;
+            position: relative;
+            flex-direction: row-reverse;
+        }
+
+        input:not(:checked)~label
+        {
+            color: #eeeeee3a;
+            transition: 3s;
+        }
+
+        input:checked~label
+        {
+            color: #ffa534;
+            animation: filling-animation .7s forwards;
+            filter: drop-shadow(0px 0px 10px #ffffff3f);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="rating-box">
+            <input type="radio" id="rating-5" name="rating" hidden>
+            <label for="rating-5" class="fas fa-star"></label>
+
+            <input type="radio" id="rating-4" name="rating" hidden>
+            <label for="rating-4" class="fas fa-star"></label>
+            
+            <input type="radio" id="rating-3" name="rating" hidden>
+            <label for="rating-3" class="fas fa-star"></label>
+
+            <input type="radio" id="rating-2" name="rating" hidden>
+            <label for="rating-2" class="fas fa-star"></label>
+
+            <input type="radio" id="rating-1" name="rating" hidden>
+            <label for="rating-1" class="fas fa-star"></label>
+
+            <div class="emojis"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
