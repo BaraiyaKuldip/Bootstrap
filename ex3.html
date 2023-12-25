@@ -29,6 +29,13 @@
             {
               /* padding-bottom: 10px; */
             }
+
+            .carousel .carousel-indicators button
+            {
+              width: 5px;
+              height: 5px;
+              border-radius: 10%;
+            }
         </style>
 </head>
 
@@ -39,6 +46,14 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
                     <div class="card text-bg-dark">
                         <div id="carousel-1" class="carousel slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                          </div>
+                        
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <img src="img/bgmi img.jpg" class="d-block w-100" alt="...">
@@ -87,6 +102,9 @@
                           <div class="carousel-inner">
                             <div class="carousel-item active">
                               <img src="img/minecraft.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Minecraft</h5>
+                            </div>
                             </div>
                             <div class="carousel-item">
                               <img src="img/minecraft 5.webp" class="d-block w-100" alt="...">
@@ -128,7 +146,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
                 <div class="card text-bg-dark">
-                    <div id="carousel-3" class="carousel slide">
+                    <div id="carousel-3" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="img/free fire img.jpg" class="d-block w-100" alt="...">
@@ -173,18 +191,18 @@
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
               <div class="card text-bg-dark">
-                  <div id="carousel-4" class="carousel slide">
+                  <div id="carousel-4" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="img/coc 1.webp" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="10000">
                           <img src="img/coc 2.webp" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                           <img src="img/coc 3.webp" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="7000">
                           <img src="img/coc 4.webp" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
